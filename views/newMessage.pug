@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+
+
+    form(action='/new', method='POST')
+        label(for="username") Username:
+        input(name='user', type="text")
+        br
+        label(for="message") Add Message:
+        input(name='text',type="text")
+        br
+        button Submit
